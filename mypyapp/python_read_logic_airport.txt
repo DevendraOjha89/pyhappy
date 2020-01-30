@@ -1,0 +1,9 @@
+file = open(file = 'c:/airports.csv', mode = 'rt', encoding = 'utf-8')
+line = file.readline()
+list = []
+while line:
+	line = line.replace('\""',"")
+	data = line.split(",")
+	print(data[2])
+	line = file.readline()
+	

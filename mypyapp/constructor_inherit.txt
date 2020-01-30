@@ -1,0 +1,24 @@
+"""
+file documentation
+"""
+class Employee:
+    """
+    file documsentation
+    """
+    def __init__(self):
+        """
+        file dosscumentation
+        """
+        print("Employee")
+class Manager(Employee):
+    """
+    file documentation
+    """
+    def __init__(self):
+        """
+        file documentation
+        """
+        super().__init__()
+        print("Manager")
+
+Manager()

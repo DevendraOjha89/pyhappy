@@ -1,0 +1,12 @@
+import re
+
+data = """
+
+I like cookies, cookies are good for health,
+cookies are made of milk and you should eat cookies. Every
+cookies are rich with chocolate
+"""
+
+result = re.sub("cookies", "monkeys", data)
+print(result)
+print(re.match("^[a-z.@0-9]+$", "devendra.ojha@siemens.com"))

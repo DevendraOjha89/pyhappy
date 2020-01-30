@@ -1,0 +1,11 @@
+import smtplib
+mail = smtplib.SMTP("mail.vinsys.com", 587)
+mail.starttls()
+
+SUBJECT = "Welcome Message"
+MESSAGE = "I Like Python "
+message = 'Subject : {}\n\n{}'.format(SUBJECT, MESSAGE)
+mail.login("iot@vinsys.com", "Python4u#")
+mail.sendmail("iot@vinsys.com", "devendra.ojha@siemens.com", message)
+mail.close()
+print("Success.....")
